@@ -1,22 +1,48 @@
 import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import {Toolbar, Button, Typography, Tabs, Tab, AppBar} from '@material-ui/core';
+import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
+import styled from 'styled-components'
+// import styledComponents from './styledComponents'
+
 
 function App() {
   return (
     <div className="App">
+        <Toolbar position= "static">
+        <Typography variant = "h5" className="logo">
+          BrandName
+        </Typography>
+          <Tabs color= "primary">
+            <Tab>Home</Tab>
+            <Tab>Product</Tab>
+            <Tab>Pricing</Tab>
+            <Tab>Contact</Tab>
+          </Tabs>
+        <Button color="primary">
+          Login
+        </Button>
+        <Button 
+          variant="outlined" 
+          color="primary"
+          fontSize="small"
+          endIcon={<ArrowForwardIcon/>}>
+            JOIN US
+        </Button>
+      </Toolbar>
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <p className="joinUs">Join Us</p>
+        <Typography variant="h2" className="headerHeader">
+          COURSES OF EXCELLENT QUALITY
+        </Typography>
+        <p className="headerText">We know how large objects will act, but things on a small scale just do not act that way</p>
+        <Button variant="contained" color="primary">
+          Get Quote Now
+        </Button>
+        <Button variant="outlined" color="primary">
+          Learn More
+        </Button>
       </header>
     </div>
   );
