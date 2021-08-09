@@ -14,7 +14,7 @@ function App() {
         <Typography variant = "h5" className="logo">
           BrandName
         </Typography>
-        {console.log("qqqq")}
+        {console.log("qqwwwwwwq")}
           <Tabs variant="fullWidth">
             <Tab label="Home"/>
             <Tab label="Product"/>
