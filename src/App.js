@@ -14,11 +14,11 @@ function App() {
         <Typography variant = "h5" className="logo">
           BrandName
         </Typography>
-          <Tabs color= "primary">
-            <Tab>Home</Tab>
-            <Tab>Product</Tab>
-            <Tab>Pricing</Tab>
-            <Tab>Contact</Tab>
+          <Tabs variant="fullWidth">
+            <Tab label="Home"/>
+            <Tab label="Product"/>
+            <Tab label="Pricing"/>
+            <Tab label="Contact"/>
           </Tabs>
         <Button color="primary">
           Login
