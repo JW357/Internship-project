@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button, Typography, Box } from '@material-ui/core';
 
-function Header() {
+export default function Header() {
   return (
     <Box className="header">
       <Typography className="joinUs">Join Us</Typography>
@@ -18,5 +18,3 @@ function Header() {
     </Box>
   );
 }
-
-export default Header;
