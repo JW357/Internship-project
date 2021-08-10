@@ -4,7 +4,7 @@ import {
 } from '@material-ui/core';
 import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 
-function Navbar() {
+export default function Navbar() {
   return (
     <Toolbar position="static">
       <Typography variant="h5" className="logo">
@@ -30,5 +30,3 @@ function Navbar() {
     </Toolbar>
   );
 }
-
-export default Navbar;
