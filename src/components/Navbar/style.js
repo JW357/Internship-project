@@ -2,40 +2,29 @@
 import { makeStyles } from '@material-ui/core/styles';
 
 export const useStyles = makeStyles({
-  navStyle: {
+  nav: {
     color: '#737373',
     fontWeight: '700',
     textTransform: 'capitalize',
   },
-  buttonStyle: {
+  button: {
     color: 'white',
     background: '#23A6F0',
     fontWeight: '700',
     boxSizing: 'border-box',
     padding: '13px 30px',
   },
-  toolbarStyle: {
-    width: '100vw',
+  toolbar: {
     justifyContent: 'space-evenly',
   },
-  loginStyle: {
+  login: {
     color: '#23A6F0',
     fontWeight: '700',
     textTransform: 'capitalize',
     marginRight: '-170px',
   },
-  logoStyle: {
+  logo: {
     fontWeight: '700',
     marginRight: '-200px',
-  },
-  blueElement2: {
-    content: ' ',
-    position: 'absolute',
-    width: '1300px',
-    height: '1250px',
-    borderRadius: '0 0 0 10%',
-    background: '#B2E3FF',
-    marginLeft: '1600px',
-    zIndex: '-2',
   },
 });

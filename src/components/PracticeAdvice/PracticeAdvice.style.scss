@@ -1,0 +1,124 @@
+@import '../../App.scss';
+
+section{
+    display: flex;
+}
+
+.practiceBlocks{
+    display: flex;
+}
+.practiceContainer {
+    margin: 50px auto;
+}
+.practiceHeader{
+    position: relative;
+    h5{
+        color: $primaryColor;
+        font-size: 1rem;
+    }
+    margin: 50px 0 80px 0;
+    h1{
+        font-size: 3rem;
+        font-weight: 700;
+    }
+    p{
+        color: $secondTextColor;
+        font-weight: 600;
+    
+    }
+}
+
+.block1, .block2, .block3, .block4{
+    &:hover{
+        background: $primaryColor;
+        transform: scale(1.1);
+        .iconBox1, .iconBox2, .iconBox3, .iconBox4, span{
+            background: white;
+            color: $primaryColor;
+            border-color: white;
+            .sentiment, .done, .creditCard, .tune{
+                color: $primaryColor;
+            }
+        }
+        h5, p {
+            color: white;
+        }
+    }
+    height: 350px;
+    width: 300px;
+    box-shadow: 0 10px 20px 0 #d4d4d4;
+    box-sizing: border-box;
+    padding: 60px 60px 0 60px;
+    h5{
+        font-weight: 700;
+        font-size: 1rem;
+    }
+    span{
+        height: 1px;
+        width: 60px;
+        background-color: #E74040;
+        border: 1px solid #E74040;
+        border-radius: 25%;
+        margin-bottom: 20px;
+        display: block;
+    }
+    p{
+        color: $secondTextColor;
+        font-weight: 600;
+    }
+}
+.block1, .block2, .block3 {
+    margin-right: 40px;
+}
+.iconBox1{
+    width: 70px;
+    height: 70px;
+    background-color: $secondaryColor;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.iconBox2{
+    width: 70px;
+    height: 70px;
+    background-color: #B9EAA8;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+.iconBox3{
+    width: 70px;
+    height: 70px;
+    background-color: #aca8a8;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+.iconBox4{
+    width: 70px;
+    height: 70px;
+    background-color: #f19696a8;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.sentiment{
+    color: $primaryColor;
+}
+
+.done{
+    color: #2DC071;
+}
+
+.creditCard{
+    color: #161515a8;
+}
+.tune{
+    color: #E74040;
+}

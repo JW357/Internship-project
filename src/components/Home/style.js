@@ -1,9 +1,9 @@
+/* eslint-disable import/prefer-default-export */
 import { makeStyles } from '@material-ui/core/styles';
 
 export const useStyles = makeStyles({
-  headerElements: {
+  headerCourses: {
     textAlign: 'center',
-    width: '100vw',
   },
   blueElement1: {
     content: ' ',
@@ -12,5 +12,16 @@ export const useStyles = makeStyles({
     height: '200px',
     borderRadius: '0 0 40px 0',
     background: '#B2E3FF',
+  },
+  blueElement2: {
+    content: ' ',
+    position: 'absolute',
+    width: '800px',
+    height: '649px',
+    borderRadius: '0 0 0 10%',
+    background: '#B2E3FF',
+    zIndex: '-2',
+    left: '1033px',
+    bottom: '300px',
   },
 });

@@ -2,7 +2,7 @@
 import { makeStyles } from '@material-ui/core/styles';
 
 export const useStyles = makeStyles({
-  button1Style: {
+  buttonQuote: {
     color: 'white',
     backgroundColor: '#23A6F0',
     border: 'none',
@@ -11,7 +11,7 @@ export const useStyles = makeStyles({
     padding: '15px 50px',
     fontSize: '0.8rem',
   },
-  button2Style: {
+  buttonLearn: {
     color: '#23A6F0',
     borderColor: '#23A6F0',
     marginLeft: '20px',
@@ -26,13 +26,13 @@ export const useStyles = makeStyles({
     width: '650px',
     margin: '40px auto',
   },
-  headerStyle: {
+  header: {
     fontWeight: '700',
     textTransform: 'uppercase',
     width: '750px',
     margin: '0 auto',
   },
-  joinStyle: {
+  joinUs: {
     margin: '150px 0 40px 0',
     color: '#23A6F0',
     fontWeight: '700',
