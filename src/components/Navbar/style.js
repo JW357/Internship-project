@@ -17,6 +17,8 @@ export const useStyles = makeStyles({
     boxSizing: 'border-box',
     padding: '13px 30px',
     marginRight: '250px',
+    border: '3px solid #B2E3FF',
+    boxShadow: ' 0 4px 2px -2px #A0A0A0',
   },
   toolbar: {
     justifyContent: 'space-evenly',
