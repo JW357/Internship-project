@@ -1,6 +1,6 @@
 /* eslint-disable max-len */
 import React from 'react';
-import './PracticeAdvice.style.scss';
+import './style.scss';
 import TuneIcon from '@material-ui/icons/Tune';
 import SentimentSatisfiedIcon from '@material-ui/icons/SentimentSatisfied';
 import DoneAllIcon from '@material-ui/icons/DoneAll';
@@ -20,32 +20,32 @@ function PracticeAdvice() {
           </p>
         </div>
         <div className="practiceBlocks">
-          <div className="block1">
-            <div className="iconBox1">
+          <div className="first__block">
+            <div className="first-icon__box">
               <SentimentSatisfiedIcon fontSize="large" className="sentiment" />
             </div>
             <h5>Evaluation time</h5>
             <span />
             <p>The gradual accumulation of information about</p>
           </div>
-          <div className="block2">
-            <div className="iconBox2">
+          <div className="second__block">
+            <div className="second-icon__box">
               <DoneAllIcon fontSize="large" className="done" />
             </div>
             <h5>training Courses</h5>
             <span />
             <p>The gradual accumulation of information about</p>
           </div>
-          <div className="block3">
-            <div className="iconBox3">
+          <div className="third__block">
+            <div className="third-icon__box">
               <CreditCardIcon fontSize="large" className="creditCard" />
             </div>
             <h5>Evaluation time</h5>
             <span />
             <p>The gradual accumulation of information about</p>
           </div>
-          <div className="block4">
-            <div className="iconBox4">
+          <div className="fourth__block">
+            <div className="fourth-icon__box">
               <TuneIcon fontSize="large" className="tune" />
             </div>
             <h5>Market Analisys</h5>

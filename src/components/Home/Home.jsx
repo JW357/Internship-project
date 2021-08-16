@@ -11,12 +11,12 @@ export default function Home() {
   return (
     <>
       <ThemeProvider className={classes.root} theme={theme}>
-        <Box className={classes.blueElement1} />
+        <Box className={classes.blueElementSmall} />
         <Box className={classes.headerCourses}>
           <Navbar />
           <Header />
         </Box>
-        <Box className={classes.blueElement2} />
+        <Box className={classes.blueElementBig} />
         <body>
           <PracticeAdvice />
         </body>

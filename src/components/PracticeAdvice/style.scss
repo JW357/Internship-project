@@ -24,15 +24,16 @@ section{
     p{
         color: $secondTextColor;
         font-weight: 600;
+        line-height: 1.4rem;
     
     }
 }
 
-.block1, .block2, .block3, .block4{
+.first__block, .second__block, .third__block, .fourth__block{
     &:hover{
         background: $primaryColor;
         transform: scale(1.1);
-        .iconBox1, .iconBox2, .iconBox3, .iconBox4, span{
+        .first-icon__box, .second-icon__box, .third-icon__box, .fourth-icon__box, span{
             background: white;
             color: $primaryColor;
             border-color: white;
@@ -65,12 +66,13 @@ section{
     p{
         color: $secondTextColor;
         font-weight: 600;
+        line-height: 1.2rem;
     }
 }
-.block1, .block2, .block3 {
+.first__block, .second__block, .third__block {
     margin-right: 40px;
 }
-.iconBox1{
+.first-icon__box{
     width: 70px;
     height: 70px;
     background-color: $secondaryColor;
@@ -80,7 +82,7 @@ section{
     border-radius: 10px;
 }
 
-.iconBox2{
+.second-icon__box{
     width: 70px;
     height: 70px;
     background-color: #B9EAA8;
@@ -89,7 +91,7 @@ section{
     align-items: center;
     border-radius: 10px;
 }
-.iconBox3{
+.third-icon__box{
     width: 70px;
     height: 70px;
     background-color: #aca8a8;
@@ -98,7 +100,7 @@ section{
     align-items: center;
     border-radius: 10px;
 }
-.iconBox4{
+.fourth-icon__box{
     width: 70px;
     height: 70px;
     background-color: #f19696a8;

@@ -6,6 +6,9 @@ export const useStyles = makeStyles({
     color: '#737373',
     fontWeight: '700',
     textTransform: 'capitalize',
+    padding: '6px 0',
+    minWidth: 0,
+    width: '120px',
   },
   button: {
     color: 'white',
@@ -13,6 +16,7 @@ export const useStyles = makeStyles({
     fontWeight: '700',
     boxSizing: 'border-box',
     padding: '13px 30px',
+    marginRight: '250px',
   },
   toolbar: {
     justifyContent: 'space-evenly',
@@ -21,10 +25,9 @@ export const useStyles = makeStyles({
     color: '#23A6F0',
     fontWeight: '700',
     textTransform: 'capitalize',
-    marginRight: '-170px',
+    left: '30px',
   },
   logo: {
     fontWeight: '700',
-    marginRight: '-200px',
   },
 });
