@@ -5,7 +5,7 @@ export const useStyles = makeStyles({
   headerCourses: {
     textAlign: 'center',
   },
-  blueElementSmall: {
+  backgroundBoxSmall: {
     content: ' ',
     position: 'absolute',
     width: '130px',
@@ -13,7 +13,7 @@ export const useStyles = makeStyles({
     borderRadius: '0 0 40px 0',
     background: '#B2E3FF',
   },
-  blueElementBig: {
+  backgroundBoxBig: {
     content: ' ',
     position: 'absolute',
     width: '800px',

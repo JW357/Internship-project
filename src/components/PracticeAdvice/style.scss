@@ -1,7 +1,8 @@
 @import '../../App.scss';
 
 section{
-    display: flex;
+    max-width: 70vw;
+    margin: 150px auto;
 }
 
 .practiceBlocks{
@@ -33,7 +34,7 @@ section{
     &:hover{
         background: $primaryColor;
         transform: scale(1.1);
-        .first-icon__box, .second-icon__box, .third-icon__box, .fourth-icon__box, span{
+        .icon__box, span{
             background: white;
             color: $primaryColor;
             border-color: white;
@@ -72,7 +73,8 @@ section{
 .first__block, .second__block, .third__block {
     margin-right: 40px;
 }
-.first-icon__box{
+
+.icon__box{
     width: 70px;
     height: 70px;
     background-color: $secondaryColor;
@@ -80,34 +82,18 @@ section{
     display: flex;
     align-items: center;
     border-radius: 10px;
-}
-
-.second-icon__box{
-    width: 70px;
-    height: 70px;
-    background-color: #B9EAA8;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    border-radius: 10px;
-}
-.third-icon__box{
-    width: 70px;
-    height: 70px;
-    background-color: #aca8a8;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    border-radius: 10px;
-}
-.fourth-icon__box{
-    width: 70px;
-    height: 70px;
-    background-color: #f19696a8;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    border-radius: 10px;
+    &-blue{
+        background: $secondaryColor;
+    }
+    &-green{
+        background: #B9EAA8;
+    }
+    &-grey{
+        background: #aca8a8;
+    }
+    &-pink{
+        background: #f19696a8;
+    }
 }
 
 .sentiment{

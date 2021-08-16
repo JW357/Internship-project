@@ -1,0 +1,30 @@
+@import '../../App.scss';
+
+.productsContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+.productsHeader{
+    padding: 150px 0 150px 150px;
+    h1{
+        font-size: 3rem;
+    }
+    .redStripe{
+        height: 6px;
+        width: 110px;
+        background-color: #E74040;
+        border: 1px solid #E74040;
+        display: block;
+    }
+    p {
+        color: $secondTextColor;
+        font-weight: 600;
+    }
+    .moreButton{
+        color: $primaryColor;
+        font-weight: 700;
+        padding: 6px 0;
+    }
+}
