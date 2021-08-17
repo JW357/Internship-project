@@ -2,23 +2,158 @@
 
 .courses{
     background: $secondaryColor;
-    .coursesContainer{
+    padding: 100px 0;
+    .coursesHeader{
         max-width: 70vw;
-        margin: 200px auto;
+        margin: 0 auto;
+        h1{
+            font-size: 3rem;
+        }
+        h5{
+            font-size: 1rem;
+            color: $primaryColor;
+        }
+        p{
+            color: $secondTextColor;
+            font-weight: 600;
+            line-height: 1.4rem;
+        }
     }
 }
 
-.coursesHeader{
-    h1{
-        font-size: 3rem;
+.courseBlocksContainer{
+    margin: 100px auto;
+    display: grid; 
+    max-width: 70vw;
+    justify-content: space-between;
+    grid-template-columns: 240px 240px 240px 240px; 
+    grid-template-rows: 658px 658px 658px; 
+    gap: 60px 128px; 
+    grid-template-areas: 
+      ". . . ."
+      ". . . ."
+      ". . . .";
+    .block__header{
+        margin: 20px;
+        h3{
+            font-size: 1rem;
+            font-weight: 700;
+        }
+        p{
+            font-size: 0.9rem;
+            font-weight: 400;
+            color: $secondTextColor
+        }
+        .rank__box{
+            h5{
+                font-size: 0.9rem;
+                font-weight: 700;
+                color: $primaryColor;
+            }
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .rank{
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                width: 50px;
+                height: 26px;
+                background-color: #252B42;
+                border-radius: 35px;
+                .star{
+                    font-size: 0.9rem;
+                    color: gold;
+                }
+                p{
+                    font-size: 0.7rem;
+                    font-weight: 700;
+                    color:white
+                }
+            }
+        }
     }
-    h5{
-        font-size: 1rem;
-        color: $primaryColor;
+    .course__block{
+        background: white;
+        box-shadow: 0 6px 20px 10px rgb(141, 133, 133);
+        &:hover{
+            box-shadow: 0 6px 50px 10px $primaryColor;
+        }
+        .course__image{
+          display: flex;
+          height: 300px;
+          width: 240px;
+          object-fit: cover;
+          background-size: cover;
+          background-position: bottom center;
+          &-first{
+            background-image: url("./images/1.jpg") ;
+          }
+          &-second{
+            background-image: url("./images/2.jpg") ;
+          }
+          &-third{
+            background-image: url("./images/3.jpg") ;
+          }
+          &-fourth{
+            background-image: url("./images/4.jpg") ;
+          } 
+          &-fifth{
+            background-image: url("./images/5.jpg") ;
+          } 
+          &-sixth{
+            background-image: url("./images/6.jpg") ;
+          } 
+          &-seventh{
+            background-image: url("./images/7.jpg") ;
+          } 
+          &-eighth{
+            background-image: url("./images/8.jpg") ;
+          }
+          &-ninth{
+            background-image: url("./images/9.jpg") ;
+          }  
+          &-tenth{
+            background-image: url("./images/10.jpg") ;
+          } 
+          &-eleventh{
+            background-image: url("./images/11.jpg") ;
+          } 
+          &-twelfth{
+            background-image: url("./images/12.jpg") ;
+          } 
+
+          .course__buttons{
+              display: flex;
+              align-items: flex-end;
+              margin: 0 auto;  
+              border-radius: 50%;
+              min-width: 0; 
+              &-heart, &-cart, &-eye{
+              background-color: white;
+              padding: 10px;
+              margin-bottom: 20px;
+              }
+              &-cart{
+                  margin: 0px 10px 20px 10px;
+              }
+          }
+          .sale{
+            position: absolute;
+            height: 24px;
+            width: 51px;
+            background: #E74040;
+            display: block;
+            border: 1px solid #E74040;
+            color: white;
+            font-weight: 700;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 0.9rem;
+            margin: 20px 0 0 20px;
+          }
+        }
     }
-    p{
-        color: $secondTextColor;
-        font-weight: 600;
-        line-height: 1.4rem;
-    }
+
 }
