@@ -1,15 +1,26 @@
 import React from 'react';
-import { Box } from '@material-ui/core';
+import { Box, ThemeProvider } from '@material-ui/core';
 import Navbar from '../Navbar';
 import Header from '../Header';
+import PracticeAdvice from '../PracticeAdvice';
+import { theme } from '../../styles/commons';
+import { useStyles } from './style';
 
 export default function Home() {
+  const classes = useStyles();
   return (
-    <div>
-      <Box className="App">
-        <Navbar />
-        <Header />
-      </Box>
-    </div>
+    <>
+      <ThemeProvider className={classes.root} theme={theme}>
+        <Box className={classes.backgroundBoxSmall} />
+        <Box className={classes.headerCourses}>
+          <Navbar />
+          <Header />
+        </Box>
+        <Box className={classes.backgroundBoxBig} />
+        <body>
+          <PracticeAdvice />
+        </body>
+      </ThemeProvider>
+    </>
   );
 }
