@@ -21,7 +21,7 @@ function PracticeAdvice() {
         </div>
         <div className="practiceBlocks">
           <div className="first__block">
-            <div className="first-icon__box">
+            <div className="icon__box icon__box-blue">
               <SentimentSatisfiedIcon fontSize="large" className="sentiment" />
             </div>
             <h5>Evaluation time</h5>
@@ -29,7 +29,7 @@ function PracticeAdvice() {
             <p>The gradual accumulation of information about</p>
           </div>
           <div className="second__block">
-            <div className="second-icon__box">
+            <div className="icon__box icon__box-green">
               <DoneAllIcon fontSize="large" className="done" />
             </div>
             <h5>training Courses</h5>
@@ -37,7 +37,7 @@ function PracticeAdvice() {
             <p>The gradual accumulation of information about</p>
           </div>
           <div className="third__block">
-            <div className="third-icon__box">
+            <div className="icon__box icon__box-grey">
               <CreditCardIcon fontSize="large" className="creditCard" />
             </div>
             <h5>Evaluation time</h5>
@@ -45,7 +45,7 @@ function PracticeAdvice() {
             <p>The gradual accumulation of information about</p>
           </div>
           <div className="fourth__block">
-            <div className="fourth-icon__box">
+            <div className="icon__box icon__box-pink">
               <TuneIcon fontSize="large" className="tune" />
             </div>
             <h5>Market Analisys</h5>
