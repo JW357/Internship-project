@@ -2,12 +2,13 @@
 
 .productsContainer{
     display: flex;
-    justify-content: center;
-    margin-top: 200px;
+    justify-content: space-between;
+    margin: 300px auto 0 auto;
+    max-width: 70vw;
 }
 
 .productsHeader{
-    padding: 150px 0 150px 150px;
+    padding: 120px 0 120px 150px;
     h1{
         font-size: 3rem;
     }

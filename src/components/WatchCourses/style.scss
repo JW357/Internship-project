@@ -2,4 +2,23 @@
 
 .courses{
     background: $secondaryColor;
+    .coursesContainer{
+        max-width: 70vw;
+        margin: 200px auto;
+    }
+}
+
+.coursesHeader{
+    h1{
+        font-size: 3rem;
+    }
+    h5{
+        font-size: 1rem;
+        color: $primaryColor;
+    }
+    p{
+        color: $secondTextColor;
+        font-weight: 600;
+        line-height: 1.4rem;
+    }
 }

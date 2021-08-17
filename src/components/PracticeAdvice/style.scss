@@ -1,15 +1,16 @@
 @import '../../App.scss';
 
 section{
-    max-width: 70vw;
     margin: 150px auto;
 }
 
 .practiceBlocks{
     display: flex;
+    justify-content: space-between;
 }
 .practiceContainer {
     margin: 50px auto;
+    max-width: 70vw;
 }
 .practiceHeader{
     position: relative;
@@ -70,9 +71,6 @@ section{
         line-height: 1.2rem;
     }
 }
-.first__block, .second__block, .third__block {
-    margin-right: 40px;
-}
 
 .icon__box{
     width: 70px;
@@ -94,19 +92,19 @@ section{
     &-pink{
         background: #f19696a8;
     }
+    .sentiment{
+        color: $primaryColor;
+    }
+    
+    .done{
+        color: #2DC071;
+    }
+    
+    .creditCard{
+        color: #161515a8;
+    }
+    .tune{
+        color: #E74040;
+    }
 }
 
-.sentiment{
-    color: $primaryColor;
-}
-
-.done{
-    color: #2DC071;
-}
-
-.creditCard{
-    color: #161515a8;
-}
-.tune{
-    color: #E74040;
-}

@@ -13,14 +13,16 @@ import './style.scss';
 function WatchCourses() {
   return (
     <section className="courses">
-      <div className="coursesHeader">
-        <h5>Practice Advice</h5>
-        <h1>Watch our Courses</h1>
-        <p>
-          Problems trying to resolve the conflict between
-          <br />
-          the two major realms of Classical physics: Newtonian mechanics
-        </p>
+      <div className="coursesContainer">
+        <div className="coursesHeader">
+          <h5>Practice Advice</h5>
+          <h1>Watch our Courses</h1>
+          <p>
+            Problems trying to resolve the conflict between
+            <br />
+            the two major realms of Classical physics: Newtonian mechanics
+          </p>
+        </div>
       </div>
     </section>
   );

@@ -7,7 +7,7 @@ import image from './pictureproducts.png';
 function FeaturedProducts() {
   return (
     <div className="productsContainer">
-      <img src={image} alt="child-stats" />
+      <img className="productImage" src={image} alt="child-stats" />
       <div className="productsHeader">
         <span className="redStripe" />
         <h1>Featured Products</h1>
