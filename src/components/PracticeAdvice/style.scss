@@ -93,19 +93,19 @@ section{
     &-pink{
         background: #f19696a8;
     }
+    .sentiment{
+        color: $primaryColor;
+    }
+    
+    .done{
+        color: #2DC071;
+    }
+    
+    .creditCard{
+        color: #161515a8;
+    }
+    .tune{
+        color: #E74040;
+    }
 }
 
-.sentiment{
-    color: $primaryColor;
-}
-
-.done{
-    color: #2DC071;
-}
-
-.creditCard{
-    color: #161515a8;
-}
-.tune{
-    color: #E74040;
-}
