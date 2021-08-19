@@ -3,6 +3,7 @@ import { Box, ThemeProvider } from '@material-ui/core';
 import Navbar from '../Navbar';
 import Header from '../Header';
 import PracticeAdvice from '../PracticeAdvice';
+import FeaturedProducts from '../FeaturedProducts';
 import { theme } from '../../styles/commons';
 import { useStyles } from './style';
 
@@ -19,6 +20,7 @@ export default function Home() {
         <Box className={classes.backgroundBoxBig} />
         <body>
           <PracticeAdvice />
+          <FeaturedProducts />
         </body>
       </ThemeProvider>
     </>
