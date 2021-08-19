@@ -9,7 +9,7 @@ function FeaturedProducts() {
     <div className="products__container">
       <img src={image} alt="child-stats" />
       <div className="products__header">
-        <span className="stripe stripe--red" />
+        <span className="practice__divider--red" />
         <h1>Featured Products</h1>
         <p>
           Problems trying to resolve the conflict between
@@ -19,7 +19,7 @@ function FeaturedProducts() {
           Newtonian mechanics
         </p>
         <Button
-          className="button-more"
+          className="more-button__button"
           endIcon={<ArrowForwardIosIcon />}
           variant=""
         >

@@ -5,7 +5,7 @@ section {
     margin: 150px auto;
 }
 
-.practice__blocks {
+.practice-option__container {
     display: flex;
 }
 .practice__container {
@@ -30,7 +30,7 @@ section {
     }
 }
 
-.first__block, .second__block, .third__block, .fourth__block{
+.practice-option__block {
     &:hover {
         background: $primaryColor;
         transform: scale(1.1);
@@ -38,7 +38,7 @@ section {
             background: white;
             color: $primaryColor;
             border-color: white;
-            .sentiment, .done, .creditCard, .tune{
+            .sentiment__icon, .done__icon, .credit-card__icon, .tune__icon{
                 color: $primaryColor;
             }
         }
@@ -70,7 +70,7 @@ section {
         line-height: 1.2rem;
     }
 }
-.first__block, .second__block, .third__block {
+.practice-option__block:first-of-type, .practice-option__block:nth-of-type(2), .practice-option__block:nth-of-type(3) {
     margin-right: 40px;
 }
 .icon__box {
@@ -81,31 +81,31 @@ section {
     display: flex;
     align-items: center;
     border-radius: 10px;
-    &-blue{
+    &--blue{
         background: $secondaryColor;
     }
-    &-green{
+    &--green{
         background: #B9EAA8;
     }
-    &-grey{
+    &--grey{
         background: #aca8a8;
     }
-    &-pink{
+    &--pink{
         background: #f19696a8;
     }
 }
 
-.sentiment {
+.sentiment__icon {
     color: $primaryColor;
 }
 
-.done {
+.done__icon {
     color: #2DC071;
 }
 
-.credit__card {
+.credit-card__icon__icon {
     color: #161515a8;
 }
-.tune {
+.tune__icon {
     color: #E74040;
 }
