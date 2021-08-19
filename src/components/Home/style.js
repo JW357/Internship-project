@@ -21,7 +21,7 @@ export const useStyles = makeStyles({
     borderRadius: '0 0 0 10%',
     background: '#B2E3FF',
     zIndex: '-2',
-    left: '1105px',
-    bottom: '328px',
+    right: '0',
+    top: '0',
   },
 });
