@@ -9,7 +9,7 @@ function FeaturedProducts() {
     <div className="products__container">
       <img src={image} alt="child-stats" />
       <div className="products__header">
-        <span className="stripe-red" />
+        <span className="stripe stripe--red" />
         <h1>Featured Products</h1>
         <p>
           Problems trying to resolve the conflict between
