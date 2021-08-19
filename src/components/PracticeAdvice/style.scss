@@ -70,8 +70,11 @@ section {
         line-height: 1.2rem;
     }
 }
-.practice-option__block:first-of-type, .practice-option__block:nth-of-type(2), .practice-option__block:nth-of-type(3) {
+.practice-option__block {
     margin-right: 40px;
+}
+.practice-option__block:last-of-type {
+    margin-right: 0px;
 }
 .icon__box {
     width: 70px;
