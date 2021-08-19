@@ -9,8 +9,8 @@ import CreditCardIcon from '@material-ui/icons/CreditCard';
 function PracticeAdvice() {
   return (
     <section>
-      <div className="practiceContainer">
-        <div className="practiceHeader">
+      <div className="practice_container">
+        <div className="practice__header">
           <h5>Practice Advice</h5>
           <h1>Make online education accesible</h1>
           <p>
@@ -19,7 +19,7 @@ function PracticeAdvice() {
             the two major realms of Classical physics: Newtonian mechanics
           </p>
         </div>
-        <div className="practiceBlocks">
+        <div className="practice__blocks">
           <div className="first__block">
             <div className="icon__box icon__box-blue">
               <SentimentSatisfiedIcon fontSize="large" className="sentiment" />
@@ -38,7 +38,7 @@ function PracticeAdvice() {
           </div>
           <div className="third__block">
             <div className="icon__box icon__box-grey">
-              <CreditCardIcon fontSize="large" className="creditCard" />
+              <CreditCardIcon fontSize="large" className="credit__card" />
             </div>
             <h5>Evaluation time</h5>
             <span />
