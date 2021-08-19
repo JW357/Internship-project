@@ -14,7 +14,7 @@ import StarIcon from '@material-ui/icons/Star';
 function WatchCourses() {
   return (
     <section className="courses">
-      <div className="coursesHeader">
+      <div className="courses__header">
         <h5>Practice Advice</h5>
         <h1>Watch our Courses</h1>
         <p>
@@ -23,7 +23,7 @@ function WatchCourses() {
           the two major realms of Classical physics: Newtonian mechanics
         </p>
       </div>
-      <div className="courseBlocksContainer">
+      <div className="course__blocks--container">
         <div className="course__block">
           <div className="course__image course__image-first">
             <span className="sale">Sale</span>

@@ -3,17 +3,17 @@
 .courses{
     background: $secondaryColor;
     padding: 100px 0;
-    .coursesHeader{
+    .courses__header {
         max-width: 70vw;
         margin: 0 auto;
-        h1{
+        h1 {
             font-size: 3rem;
         }
-        h5{
+        h5 {
             font-size: 1rem;
             color: $primaryColor;
         }
-        p{
+        p {
             color: $secondTextColor;
             font-weight: 600;
             line-height: 1.4rem;
@@ -21,7 +21,7 @@
     }
 }
 
-.courseBlocksContainer{
+.course__blocks--container {
     margin: 100px auto;
     display: grid; 
     max-width: 70vw;
@@ -33,19 +33,19 @@
       ". . . ."
       ". . . ."
       ". . . .";
-    .block__header{
+    .block__header {
         margin: 20px;
-        h3{
+        h3 {
             font-size: 1rem;
             font-weight: 700;
         }
-        p{
+        p {
             font-size: 0.9rem;
             font-weight: 400;
             color: $secondTextColor
         }
-        .rank__box{
-            h5{
+        .rank__box {
+            h5 {
                 font-size: 0.9rem;
                 font-weight: 700;
                 color: $primaryColor;
@@ -61,11 +61,11 @@
                 height: 26px;
                 background-color: #252B42;
                 border-radius: 35px;
-                .star{
+                .star {
                     font-size: 0.9rem;
                     color: gold;
                 }
-                p{
+                p {
                     font-size: 0.7rem;
                     font-weight: 700;
                     color:white
@@ -73,57 +73,57 @@
             }
         }
     }
-    .course__block{
+    .course__block {
         background: white;
         box-shadow: 0 6px 20px 10px rgb(141, 133, 133);
         &:hover{
             box-shadow: 0 6px 50px 10px $primaryColor;
         }
-        .course__image{
+        .course__image {
           display: flex;
           height: 300px;
           width: 240px;
           object-fit: cover;
           background-size: cover;
           background-position: bottom center;
-          &-first{
+          &-first {
             background-image: url("./images/1.jpg") ;
           }
-          &-second{
+          &-second {
             background-image: url("./images/2.jpg") ;
           }
-          &-third{
+          &-third {
             background-image: url("./images/3.jpg") ;
           }
-          &-fourth{
+          &-fourth {
             background-image: url("./images/4.jpg") ;
           } 
-          &-fifth{
+          &-fifth {
             background-image: url("./images/5.jpg") ;
           } 
-          &-sixth{
+          &-sixth {
             background-image: url("./images/6.jpg") ;
           } 
-          &-seventh{
+          &-seventh {
             background-image: url("./images/7.jpg") ;
           } 
-          &-eighth{
+          &-eighth {
             background-image: url("./images/8.jpg") ;
           }
-          &-ninth{
+          &-ninth {
             background-image: url("./images/9.jpg") ;
           }  
-          &-tenth{
+          &-tenth {
             background-image: url("./images/10.jpg") ;
           } 
-          &-eleventh{
+          &-eleventh {
             background-image: url("./images/11.jpg") ;
           } 
-          &-twelfth{
+          &-twelfth {
             background-image: url("./images/12.jpg") ;
           } 
 
-          .course__buttons{
+          .course__buttons {
               display: flex;
               align-items: flex-end;
               margin: 0 auto;  
@@ -134,11 +134,11 @@
               padding: 10px;
               margin-bottom: 20px;
               }
-              &-cart{
+              &-cart {
                   margin: 0px 10px 20px 10px;
               }
           }
-          .sale{
+          .sale {
             position: absolute;
             height: 24px;
             width: 51px;
