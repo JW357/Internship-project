@@ -6,10 +6,10 @@ import image from './pictureproducts.png';
 
 function FeaturedProducts() {
   return (
-    <div className="productsContainer">
-      <img className="productImage" src={image} alt="child-stats" />
-      <div className="productsHeader">
-        <span className="redStripe" />
+    <div className="products__container">
+      <img src={image} alt="child-stats" />
+      <div className="products__header">
+        <span className="practice__divider--red" />
         <h1>Featured Products</h1>
         <p>
           Problems trying to resolve the conflict between
@@ -19,7 +19,7 @@ function FeaturedProducts() {
           Newtonian mechanics
         </p>
         <Button
-          className="moreButton"
+          className="more-button__button"
           endIcon={<ArrowForwardIosIcon />}
           variant=""
         >

@@ -2,8 +2,10 @@
 
 .products__container {
     display: flex;
-    justify-content: center;
-    margin-top: 200px;
+    justify-content: space-between;
+    margin: 300px auto 200px auto;
+    max-width: 70vw;
+
 }
 
 .products__header {
@@ -11,7 +13,7 @@
     h1 {
         font-size: 3rem;
     }
-    .stripe-red{
+    .practice__divider--red{
         height: 6px;
         width: 110px;
         background-color: #E74040;
@@ -22,7 +24,7 @@
         color: $secondTextColor;
         font-weight: 600;
     }
-    .button-more {
+    .more-button__button {
         color: $primaryColor;
         font-weight: 700;
         padding: 6px 0;

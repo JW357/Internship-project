@@ -1,29 +1,29 @@
 @import '../../App.scss';
 
-.practice{
+.practice__section {
+    max-width: 70vw;
     margin: 150px auto;
 }
 
-.practiceBlocks{
+.practice-option__container {
     display: flex;
     justify-content: space-between;
 }
-.practiceContainer {
+.practice__container {
     margin: 50px auto;
-    max-width: 70vw;
 }
-.practiceHeader{
+.practice__header {
     position: relative;
-    h5{
+    h5 {
         color: $primaryColor;
         font-size: 1rem;
     }
     margin: 50px 0 80px 0;
-    h1{
+    h1 {
         font-size: 3rem;
         font-weight: 700;
     }
-    p{
+    p {
         color: $secondTextColor;
         font-weight: 600;
         line-height: 1.4rem;
@@ -31,15 +31,15 @@
     }
 }
 
-.first__block, .second__block, .third__block, .fourth__block{
-    &:hover{
+.practice-option__block {
+    &:hover {
         background: $primaryColor;
         transform: scale(1.1);
-        .icon__box, span{
+        .icon__box, span {
             background: white;
             color: $primaryColor;
             border-color: white;
-            .sentiment, .done, .creditCard, .tune{
+            .sentiment__icon, .done__icon, .credit-card__icon, .tune__icon{
                 color: $primaryColor;
             }
         }
@@ -52,7 +52,7 @@
     box-shadow: 0 10px 20px 0 #d4d4d4;
     box-sizing: border-box;
     padding: 60px 60px 0 60px;
-    h5{
+    h5 {
         font-weight: 700;
         font-size: 1rem;
     }
@@ -65,14 +65,19 @@
         margin-bottom: 20px;
         display: block;
     }
-    p{
+    p {
         color: $secondTextColor;
         font-weight: 600;
         line-height: 1.2rem;
     }
 }
-
-.icon__box{
+.practice-option__block {
+    margin-right: 40px;
+}
+.practice-option__block:last-of-type {
+    margin-right: 0px;
+}
+.icon__box {
     width: 70px;
     height: 70px;
     background-color: $secondaryColor;
@@ -80,31 +85,31 @@
     display: flex;
     align-items: center;
     border-radius: 10px;
-    &-blue{
+    &--blue{
         background: $secondaryColor;
     }
-    &-green{
+    &--green{
         background: #B9EAA8;
     }
-    &-grey{
+    &--grey{
         background: #aca8a8;
     }
-    &-pink{
+    &--pink{
         background: #f19696a8;
-    }
-    .sentiment{
-        color: $primaryColor;
-    }
-    
-    .done{
-        color: #2DC071;
-    }
-    
-    .creditCard{
-        color: #161515a8;
-    }
-    .tune{
-        color: #E74040;
     }
 }
 
+.sentiment__icon {
+    color: $primaryColor;
+}
+
+.done__icon {
+    color: #2DC071;
+}
+
+.credit-card__icon__icon {
+    color: #161515a8;
+}
+.tune__icon {
+    color: #E74040;
+}
