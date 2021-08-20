@@ -5,6 +5,7 @@ import Header from '../Header';
 import PracticeAdvice from '../PracticeAdvice';
 import FeaturedProducts from '../FeaturedProducts';
 import WatchCourses from '../WatchCourses';
+import Experts from '../Experts/Experts';
 import { theme } from '../../styles/commons';
 import { useStyles } from './style';
 
@@ -23,6 +24,7 @@ export default function Home() {
           <PracticeAdvice />
           <FeaturedProducts />
           <WatchCourses />
+          <Experts />
         </body>
       </ThemeProvider>
     </>
