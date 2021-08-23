@@ -29,17 +29,15 @@
           flex-direction: column;
           align-items: center;
           .expert__picture {
-              background-size: cover;
               width: 8rem;
               height: 8rem;
               border-radius: 50%;
+              object-fit: cover;
               &--first{
-                  background-image: url(./images/1.jpg);
-                  background-position: 80% 40%;
+                  object-position: 80% 40%;
               }
               &--second{
-                  background-image: url(./images/2.jpg);
-                  background-position: 80% 60%;
+                  object-position: 80% 80%;
               }
           }
           .review__text {

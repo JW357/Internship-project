@@ -2,6 +2,8 @@ import React from 'react';
 import './style.scss';
 import StarIcon from '@material-ui/icons/Star';
 import StarOutlineIcon from '@material-ui/icons/StarOutline';
+import expert1 from './images/expert1.jpg';
+import expert2 from './images/expert2.jpg';
 
 function Experts() {
   return (
@@ -18,7 +20,7 @@ function Experts() {
         </div>
         <div className="experts-review__box">
           <div className="expert-review__block">
-            <div className="expert__picture expert__picture--first" />
+            <img src={expert1} className="expert__picture expert__picture--first" alt="expert1" />
             <p className="review__text">
               Slate helps you see how many more days
               <br />
@@ -37,7 +39,7 @@ function Experts() {
             <p className="role__text">Designer</p>
           </div>
           <div className="expert-review__block">
-            <div className="expert__picture expert__picture--second" />
+            <img src={expert2} className="expert__picture expert__picture--second" alt="expert2" />
             <p className="review__text">
               Slate helps you see how many more days
               <br />
