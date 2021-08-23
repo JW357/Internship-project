@@ -1,6 +1,6 @@
 import React from 'react';
 import './style.scss';
-import { TextField, Button } from '@material-ui/core';
+import { Button } from '@material-ui/core';
 
 function Contact() {
   return (
@@ -16,7 +16,7 @@ function Contact() {
           </p>
         </div>
         <div className="contact__form">
-          <TextField label="Your Email" variant="outlined" className="address__field" />
+          <input type="email" id="email" className="address__field" placeholder="Your Email" />
           <Button label="Subscribe" className="subscribe__button" variant="contained">
             Subscribe
           </Button>
