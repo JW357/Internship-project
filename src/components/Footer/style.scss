@@ -1,0 +1,45 @@
+@import '../../App.scss';
+
+.footer__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    .footer-column__container {
+        width: 70vw;
+        display: flex;
+        justify-content: space-between;
+        margin: 100px auto 50px auto;
+        .footer__column {
+            display: flex;
+            flex-direction: column;
+            h2 {
+                font-size: 1.5rem;
+                font-weight: 700;
+            }
+            a, p{
+                text-decoration: none;
+                font-size: 0.8rem;
+                color: $secondTextColor;
+                line-height: 2rem;
+            }
+            a {
+                font-weight: 700;
+            }
+            .column-icon__box {
+                color: $primaryColor;
+                .instagram__icon {
+                    margin: 0 1rem;
+                }
+            }
+        }
+    }
+    .footer-end__line {
+        text-align: center;
+        width: 100%;
+        font-size: 0.8rem;
+        font-weight: 700;
+        color: $secondTextColor;
+        background: #FAFAFA
+        }
+ }

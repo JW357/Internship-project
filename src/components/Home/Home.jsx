@@ -7,6 +7,7 @@ import FeaturedProducts from '../FeaturedProducts';
 import WatchCourses from '../WatchCourses';
 import Experts from '../Experts/Experts';
 import Contact from '../Contact/Contact';
+import Footer from '../Footer/Footer';
 import { theme } from '../../styles/commons';
 import { useStyles } from './style';
 
@@ -28,6 +29,7 @@ export default function Home() {
           <Experts />
           <Contact />
         </body>
+        <Footer />
       </ThemeProvider>
     </>
   );
