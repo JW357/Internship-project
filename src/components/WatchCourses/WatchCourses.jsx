@@ -24,7 +24,7 @@ function WatchCourses() {
       </div>
       <div className="course-option__container">
         <div className="course-option__block">
-          <div className="course__image course__image-first">
+          <div className="course__image">
             <span className="sale">Sale</span>
             <div className="course__buttons">
               <Button
@@ -100,7 +100,7 @@ function WatchCourses() {
           </div>
         </div>
         <div className="course-option__block">
-          <div className="course__image course__image-second">
+          <div className="course__image">
             <span className="sale">Sale</span>
             <div className="course__buttons">
               <Button
@@ -173,83 +173,7 @@ function WatchCourses() {
           </div>
         </div>
         <div className="course-option__block">
-          <div className="course__image course__image-third">
-            <span className="sale">Sale</span>
-            <div className="course__buttons">
-              <Button
-                aria-label="Add to favourites"
-                color="white"
-                className="course__buttons course__buttons--heart"
-                variant="contained"
-              >
-                <FavoriteBorderIcon />
-              </Button>
-              <Button
-                color="white"
-                aria-label="Add to favourites"
-                variant="contained"
-                className="course__buttons course__buttons--cart"
-              >
-                <ShoppingCartIcon />
-              </Button>
-              <Button
-                color="white"
-                aria-label="Add to favourites"
-                variant="contained"
-                className="course__buttons course__buttons--eye"
-              >
-                <VisibilityIcon />
-              </Button>
-            </div>
-          </div>
-          <div className="option__header">
-            <div className="rating__box">
-              <h5>English</h5>
-              <div className="rating__value">
-                <StarIcon className="star__icon" />
-                <p>4.9</p>
-              </div>
-            </div>
-            <h3>Graphic Design</h3>
-            <p className="course__description">
-              We focus on ergonomics
-              <br />
-              and meeting you....
-            </p>
-            <p className="course__sales">
-              <VerticalAlignBottomIcon />
-              15 sales
-            </p>
-            <p className="course__price">
-              <span className="course__price course__price--normal">$16.48</span>
-              <span className="course__price course__price--discount">  $6.48</span>
-            </p>
-            <div className="course__stats">
-              <p className="stats__icon">
-                <AccessAlarmIcon className="stats__icon stats__icon--time" />
-                <span className="stats__icon stats__icon--text"> Pro ...</span>
-              </p>
-              <p className="stats__icon">
-                <AssessmentIcon className="stats__icon stats__icon--chart" />
-                <span className="stats__icon stats__icon--text"> 64 Les...</span>
-              </p>
-              <p className="stats__icon">
-                <AccessAlarmIcon className="stats__icon stats__icon--time" />
-                <span className="stats__icon stats__icon--text"> 22hr...</span>
-              </p>
-            </div>
-            <Button
-              color="white"
-              variant="outlined"
-              className="more-button__button more-button__button--course"
-              endIcon={<ArrowForwardIosIcon />}
-            >
-              Learn More...
-            </Button>
-          </div>
-        </div>
-        <div className="course-option__block">
-          <div className="course__image course__image-fourth">
+          <div className="course__image">
             <span className="sale">Sale</span>
             <div className="course__buttons">
               <Button
@@ -325,7 +249,7 @@ function WatchCourses() {
           </div>
         </div>
         <div className="course-option__block">
-          <div className="course__image course__image-fifth">
+          <div className="course__image">
             <span className="sale">Sale</span>
             <div className="course__buttons">
               <Button
@@ -401,7 +325,7 @@ function WatchCourses() {
           </div>
         </div>
         <div className="course-option__block">
-          <div className="course__image course__image-sixth">
+          <div className="course__image">
             <span className="sale">Sale</span>
             <div className="course__buttons">
               <Button
@@ -477,7 +401,7 @@ function WatchCourses() {
           </div>
         </div>
         <div className="course-option__block">
-          <div className="course__image course__image-seventh">
+          <div className="course__image">
             <span className="sale">Sale</span>
             <div className="course__buttons">
               <Button
@@ -553,7 +477,7 @@ function WatchCourses() {
           </div>
         </div>
         <div className="course-option__block">
-          <div className="course__image course__image-eighth">
+          <div className="course__image">
             <span className="sale">Sale</span>
             <div className="course__buttons">
               <Button
@@ -629,7 +553,7 @@ function WatchCourses() {
           </div>
         </div>
         <div className="course-option__block">
-          <div className="course__image course__image-ninth">
+          <div className="course__image">
             <span className="sale">Sale</span>
             <div className="course__buttons">
               <Button
@@ -705,7 +629,7 @@ function WatchCourses() {
           </div>
         </div>
         <div className="course-option__block">
-          <div className="course__image course__image-tenth">
+          <div className="course__image">
             <span className="sale">Sale</span>
             <div className="course__buttons">
               <Button
@@ -781,7 +705,7 @@ function WatchCourses() {
           </div>
         </div>
         <div className="course-option__block">
-          <div className="course__image course__image-eleventh">
+          <div className="course__image ">
             <span className="sale">Sale</span>
             <div className="course__buttons">
               <Button
@@ -857,7 +781,83 @@ function WatchCourses() {
           </div>
         </div>
         <div className="course-option__block">
-          <div className="course__image course__image-twelfth">
+          <div className="course__image">
+            <span className="sale">Sale</span>
+            <div className="course__buttons">
+              <Button
+                aria-label="Add to favourites"
+                color="white"
+                className="course__buttons course__buttons--heart"
+                variant="contained"
+              >
+                <FavoriteBorderIcon />
+              </Button>
+              <Button
+                color="white"
+                aria-label="Add to favourites"
+                variant="contained"
+                className="course__buttons course__buttons--cart"
+              >
+                <ShoppingCartIcon />
+              </Button>
+              <Button
+                color="white"
+                aria-label="Add to favourites"
+                variant="contained"
+                className="course__buttons course__buttons--eye"
+              >
+                <VisibilityIcon />
+              </Button>
+            </div>
+          </div>
+          <div className="option__header">
+            <div className="rating__box">
+              <h5>English</h5>
+              <div className="rating__value">
+                <StarIcon className="star__icon" />
+                <p>4.9</p>
+              </div>
+            </div>
+            <h3>Graphic Design</h3>
+            <p className="course__description">
+              We focus on ergonomics
+              <br />
+              and meeting you....
+            </p>
+            <p className="course__sales">
+              <VerticalAlignBottomIcon />
+              15 sales
+            </p>
+            <p className="course__price">
+              <span className="course__price course__price--normal">$16.48</span>
+              <span className="course__price course__price--discount">  $6.48</span>
+            </p>
+            <div className="course__stats">
+              <p className="stats__icon">
+                <AccessAlarmIcon className="stats__icon stats__icon--time" />
+                <span className="stats__icon stats__icon--text"> Pro ...</span>
+              </p>
+              <p className="stats__icon">
+                <AssessmentIcon className="stats__icon stats__icon--chart" />
+                <span className="stats__icon stats__icon--text"> 64 Les...</span>
+              </p>
+              <p className="stats__icon">
+                <AccessAlarmIcon className="stats__icon stats__icon--time" />
+                <span className="stats__icon stats__icon--text"> 22hr...</span>
+              </p>
+            </div>
+            <Button
+              color="white"
+              variant="outlined"
+              className="more-button__button more-button__button--course"
+              endIcon={<ArrowForwardIosIcon />}
+            >
+              Learn More...
+            </Button>
+          </div>
+        </div>
+        <div className="course-option__block">
+          <div className="course__image">
             <span className="sale">Sale</span>
             <div className="course__buttons">
               <Button
