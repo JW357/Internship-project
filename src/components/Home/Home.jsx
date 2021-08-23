@@ -6,6 +6,7 @@ import PracticeAdvice from '../PracticeAdvice';
 import FeaturedProducts from '../FeaturedProducts';
 import WatchCourses from '../WatchCourses';
 import Experts from '../Experts/Experts';
+import Contact from '../Contact/Contact';
 import { theme } from '../../styles/commons';
 import { useStyles } from './style';
 
@@ -25,6 +26,7 @@ export default function Home() {
           <FeaturedProducts />
           <WatchCourses />
           <Experts />
+          <Contact />
         </body>
       </ThemeProvider>
     </>

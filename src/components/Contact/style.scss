@@ -1,0 +1,53 @@
+@import '../../App.scss';
+
+.contact__container {
+  max-width: 70vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .contact__header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+    h5 {
+      color: $primaryColor;
+      font-size: 0.8rem;
+      font-weight: 700;
+    }
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin: 10px auto
+    }
+    p{
+      font-size: 0.8rem;
+      line-height: 1.25rem;
+      color: $secondTextColor;
+      font-weight: 400;
+    }
+    }
+  .contact__form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-width: 688px;
+    height: 58px;
+    border-radius: 5px;
+    //border: 1px solid #E6E6E6;
+    .join__input{
+      background: #F9F9F9;
+      width: 571px;
+      height: 58px
+    }
+    .subscribe__button{
+      background: $primaryColor;
+      color: white;
+      text-transform: capitalize;
+      width: 117px;
+      height: 58px;
+    }
+  }
+}
