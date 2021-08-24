@@ -54,7 +54,7 @@
         .course__price {
           font-size: 1rem;
           font-weight: 700;
-          &--normal{
+          &--normal {
             color: $secondTextColor;
             text-decoration: line-through;
           }
@@ -132,7 +132,66 @@
         background: white;
         box-shadow: 0 6px 20px 10px rgb(141, 133, 133);
         &:hover {
-            box-shadow: 0 6px 50px 10px $primaryColor;
+          box-shadow: 0 6px 50px 10px $primaryColor;
+        }
+        &:first-of-type {
+          .course__image {
+            background-image: url("./images/course-image1.jpg") ;
+          }
+        }
+        &:nth-of-type(2) {
+          .course__image {
+            background-image: url("./images/course-image2.jpg") ;
+          }
+        }
+        &:nth-of-type(3) {
+          .course__image {
+            background-image: url("./images/course-image3.jpg") ;
+          }
+        }
+        &:nth-of-type(4) {
+          .course__image {
+            background-image: url("./images/course-image4.jpg") ;
+          }
+        }
+        &:nth-of-type(5) {
+          .course__image {
+            background-image: url("./images/course-image5.jpg") ;
+          }
+        }
+        &:nth-of-type(6) {
+          .course__image {
+            background-image: url("./images/course-image6.jpg") ;
+          }
+        }&:nth-of-type(7) {
+           .course__image {
+             background-image: url("./images/course-image7.jpg") ;
+           }
+         }
+        &:nth-of-type(8) {
+          .course__image {
+            background-image: url("./images/course-image8.jpg") ;
+          }
+        }
+        &:nth-of-type(9) {
+          .course__image {
+            background-image: url("./images/course-image9.jpg") ;
+          }
+        }
+        &:nth-of-type(10) {
+          .course__image {
+            background-image: url("./images/course-image10.jpg") ;
+          }
+        }
+        &:nth-of-type(11) {
+          .course__image {
+            background-image: url("./images/course-image11.jpg") ;
+          }
+        }
+        &:last-of-type {
+          .course__image {
+            background-image: url("./images/course-image12.jpg") ;
+          }
         }
         .course__image {
           display: flex;
@@ -141,42 +200,6 @@
           object-fit: cover;
           background-size: cover;
           background-position: bottom center;
-          &-first {
-            background-image: url("./images/1.jpg") ;
-          }
-          &-second {
-            background-image: url("./images/2.jpg") ;
-          }
-          &-third {
-            background-image: url("./images/3.jpg") ;
-          }
-          &-fourth {
-            background-image: url("./images/4.jpg") ;
-          } 
-          &-fifth {
-            background-image: url("./images/5.jpg") ;
-          } 
-          &-sixth {
-            background-image: url("./images/6.jpg") ;
-          } 
-          &-seventh {
-            background-image: url("./images/7.jpg") ;
-          } 
-          &-eighth {
-            background-image: url("./images/8.jpg") ;
-          }
-          &-ninth {
-            background-image: url("./images/9.jpg") ;
-          }  
-          &-tenth {
-            background-image: url("./images/10.jpg") ;
-          } 
-          &-eleventh {
-            background-image: url("./images/11.jpg") ;
-          } 
-          &-twelfth {
-            background-image: url("./images/12.jpg") ;
-          } 
 
           .course__buttons {
               display: flex;
