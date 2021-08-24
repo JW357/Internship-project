@@ -16,7 +16,7 @@ export const useStyles = makeStyles({
   backgroundBoxBig: {
     content: ' ',
     position: 'absolute',
-    width: '800px',
+    width: '840px',
     height: '649px',
     borderRadius: '0 0 0 10%',
     background: '#B2E3FF',

@@ -1,0 +1,237 @@
+@import '../../App.scss';
+
+.courses {
+    background: $secondaryColor;
+    padding: 100px 0;
+    .courses__header {
+        max-width: 70vw;
+        margin: 0 auto;
+        h1 {
+            font-size: 3rem;
+        }
+        h5 {
+            font-size: 1rem;
+            color: $primaryColor;
+        }
+        p {
+            color: $secondTextColor;
+            font-weight: 600;
+            line-height: 1.4rem;
+        }
+    }
+}
+
+.course-option__container {
+    margin: 100px auto;
+    display: grid; 
+    max-width: 70vw;
+    justify-content: space-between;
+    grid-template-columns: 240px 240px 240px 240px; 
+    grid-template-rows: 658px 658px 658px; 
+    gap: 60px 128px; 
+    grid-template-areas: 
+      ". . . ."
+      ". . . ."
+      ". . . .";
+    .option__header {
+        margin: 20px;
+        h3 {
+            font-size: 1rem;
+            font-weight: 700;
+        }
+        .course__description {
+          font-size: 0.9rem;
+            font-weight: 400;
+            color: $secondTextColor
+        }
+        .course__sales {
+          display: flex;
+          align-items: center;
+          font-weight: 700;
+          font-size: 0.9rem;
+          color: $secondTextColor;
+        }
+        .course__price {
+          font-size: 1rem;
+          font-weight: 700;
+          &--normal {
+            color: $secondTextColor;
+            text-decoration: line-through;
+          }
+          
+          &--discount {
+            color: #40BB15;
+          }
+        }
+        .course__stats {
+          display: flex;
+          justify-content: space-between;
+          .stats__icon {
+            display: flex;
+            font-weight: 600;
+            font-size: 0.8rem;
+            align-items: center;
+            &--time {
+              color: $primaryColor;
+              font-size: 1rem;
+              margin-right: 2px;
+      
+            }
+            &--chart {
+              color: #E77C40;
+              font-size: 1rem;
+              margin-right: 2px;
+      
+            }
+            &--text {
+              color: $secondTextColor;
+            }
+          }
+        }
+        .more-button__button {
+          &--course {
+            color: $primaryColor;
+            border-color: $primaryColor;
+            font-size: 0.8rem;
+            font-weight: 700;
+            border-radius: 35px;
+            padding: 10px 20px;
+            text-transform: capitalize;
+          }
+        }
+        .rating__box {
+            h5 {
+                font-size: 0.9rem;
+                font-weight: 700;
+                color: $primaryColor;
+            }
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .rating__value {
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                width: 50px;
+                height: 26px;
+                background-color: #252B42;
+                border-radius: 35px;
+                .star__icon {
+                    font-size: 0.9rem;
+                    color: gold;
+                }
+                p {
+                    font-size: 0.7rem;
+                    font-weight: 700;
+                    color:white
+                }
+            }
+        }
+    }
+    .course-option__block {
+        background: white;
+        box-shadow: 0 6px 20px 10px rgb(141, 133, 133);
+        &:hover {
+          box-shadow: 0 6px 50px 10px $primaryColor;
+        }
+        &:first-of-type {
+          .course__image {
+            background-image: url("./images/course-image1.jpg") ;
+          }
+        }
+        &:nth-of-type(2) {
+          .course__image {
+            background-image: url("./images/course-image2.jpg") ;
+          }
+        }
+        &:nth-of-type(3) {
+          .course__image {
+            background-image: url("./images/course-image3.jpg") ;
+          }
+        }
+        &:nth-of-type(4) {
+          .course__image {
+            background-image: url("./images/course-image4.jpg") ;
+          }
+        }
+        &:nth-of-type(5) {
+          .course__image {
+            background-image: url("./images/course-image5.jpg") ;
+          }
+        }
+        &:nth-of-type(6) {
+          .course__image {
+            background-image: url("./images/course-image6.jpg") ;
+          }
+        }&:nth-of-type(7) {
+           .course__image {
+             background-image: url("./images/course-image7.jpg") ;
+           }
+         }
+        &:nth-of-type(8) {
+          .course__image {
+            background-image: url("./images/course-image8.jpg") ;
+          }
+        }
+        &:nth-of-type(9) {
+          .course__image {
+            background-image: url("./images/course-image9.jpg") ;
+          }
+        }
+        &:nth-of-type(10) {
+          .course__image {
+            background-image: url("./images/course-image10.jpg") ;
+          }
+        }
+        &:nth-of-type(11) {
+          .course__image {
+            background-image: url("./images/course-image11.jpg") ;
+          }
+        }
+        &:last-of-type {
+          .course__image {
+            background-image: url("./images/course-image12.jpg") ;
+          }
+        }
+        .course__image {
+          display: flex;
+          height: 300px;
+          width: 240px;
+          object-fit: cover;
+          background-size: cover;
+          background-position: bottom center;
+
+          .course__buttons {
+              display: flex;
+              align-items: flex-end;
+              margin: 0 auto;  
+              border-radius: 50%;
+              min-width: 0; 
+              &--heart, &--cart, &--eye{
+              background-color: white;
+              padding: 10px;
+              margin-bottom: 20px;
+              }
+              &--cart {
+                  margin: 0px 10px 20px 10px;
+              }
+          }
+          .sale {
+            position: absolute;
+            height: 24px;
+            width: 51px;
+            background: #E74040;
+            display: block;
+            border: 1px solid #E74040;
+            color: white;
+            font-weight: 700;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 0.9rem;
+            margin: 20px 0 0 20px;
+          }
+        }
+    }
+
+}

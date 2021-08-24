@@ -8,7 +8,7 @@ import CreditCardIcon from '@material-ui/icons/CreditCard';
 
 function PracticeAdvice() {
   return (
-    <section>
+    <section className="practice__section">
       <div className="practice__container">
         <div className="practice__header">
           <h5>Practice Advice</h5>
