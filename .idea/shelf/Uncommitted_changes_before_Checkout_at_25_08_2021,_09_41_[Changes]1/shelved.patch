@@ -1,0 +1,19 @@
+Index: src/components/PracticeAdvice/style.scss
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>@import '../../App.scss';\n\n.practice__section {\n    max-width: 70vw;\n    margin: 150px auto;\n}\n\n.practice-option__container {\n    display: flex;\n    justify-content: space-between;\n}\n.practice__container {\n    margin: 50px auto;\n}\n.practice__header {\n    position: relative;\n    h5 {\n        color: $primaryColor;\n        font-size: 1rem;\n    }\n    margin: 50px 0 80px 0;\n    h1 {\n        font-size: 3rem;\n        font-weight: 700;\n    }\n    p {\n        color: $secondTextColor;\n        font-weight: 600;\n        line-height: 1.4rem;\n    \n    }\n}\n\n.practice-option__block {\n    &:hover {\n        background: $primaryColor;\n        transform: scale(1.1);\n        .icon__box, span {\n            background: white;\n            color: $primaryColor;\n            border-color: white;\n            .sentiment__icon, .done__icon, .credit-card__icon, .tune__icon{\n                color: $primaryColor;\n            }\n        }\n        h5, p {\n            color: white;\n        }\n    }\n    height: 350px;\n    width: 300px;\n    box-shadow: 0 10px 20px 0 #d4d4d4;\n    box-sizing: border-box;\n    padding: 60px 60px 0 60px;\n    h5 {\n        font-weight: 700;\n        font-size: 1rem;\n    }\n    span{\n        height: 1px;\n        width: 60px;\n        background-color: #E74040;\n        border: 1px solid #E74040;\n        border-radius: 25%;\n        margin-bottom: 20px;\n        display: block;\n    }\n    p {\n        color: $secondTextColor;\n        font-weight: 600;\n        line-height: 1.2rem;\n    }\n}\n.practice-option__block {\n    margin-right: 40px;\n}\n.practice-option__block:last-of-type {\n    margin-right: 0px;\n}\n.icon__box {\n    width: 70px;\n    height: 70px;\n    background-color: $secondaryColor;\n    justify-content: center;\n    display: flex;\n    align-items: center;\n    border-radius: 10px;\n    &--blue{\n        background: $secondaryColor;\n    }\n    &--green{\n        background: #B9EAA8;\n    }\n    &--grey{\n        background: #aca8a8;\n    }\n    &--pink{\n        background: #f19696a8;\n    }\n}\n\n.sentiment__icon {\n    color: $primaryColor;\n}\n\n.done__icon {\n    color: #2DC071;\n}\n\n.credit-card__icon__icon {\n    color: #161515a8;\n}\n.tune__icon {\n    color: #E74040;\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/PracticeAdvice/style.scss b/src/components/PracticeAdvice/style.scss
+--- a/src/components/PracticeAdvice/style.scss	
++++ b/src/components/PracticeAdvice/style.scss	
+@@ -56,7 +56,7 @@
+         font-weight: 700;
+         font-size: 1rem;
+     }
+-    span{
++    span {
+         height: 1px;
+         width: 60px;
+         background-color: #E74040;

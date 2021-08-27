@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './style.scss';
 import StarIcon from '@material-ui/icons/Star';
 import StarOutlineIcon from '@material-ui/icons/StarOutline';
@@ -6,6 +6,13 @@ import expert1 from './images/expert1.jpg';
 import expert2 from './images/expert2.jpg';
 
 function Experts() {
+  const [starNumber] = useState(3);
+  const [stars, setStars] = useState([]);
+  useEffect(() => {
+    for (let i = 0; i <= starNumber; i += 1) {
+      setStars((prevState) => [...prevState, i]);
+    }
+  }, []);
   return (
     <section className="experts">
       <div className="experts__container">
@@ -28,11 +35,8 @@ function Experts() {
               <br />
               goal for the month and year.
             </p>
-            <div className="rating__line">
-              <StarIcon className="star__icon" />
-              <StarIcon className="star__icon" />
-              <StarIcon className="star__icon" />
-              <StarIcon className="star__icon" />
+            <div className="star__rating">
+              {stars.map((key) => <StarIcon className="star__icon" key={key} />)}
               <StarOutlineIcon className="star__icon" />
             </div>
             <p className="name__text">Regina Miles</p>
@@ -47,11 +51,8 @@ function Experts() {
               <br />
               goal for the month and year.
             </p>
-            <div className="rating__line">
-              <StarIcon className="star__icon" />
-              <StarIcon className="star__icon" />
-              <StarIcon className="star__icon" />
-              <StarIcon className="star__icon" />
+            <div className="star__rating">
+              {stars.map((key) => <StarIcon className="star__icon" key={key} />)}
               <StarOutlineIcon className="star__icon" />
             </div>
             <p className="name__text">Regina Miles</p>

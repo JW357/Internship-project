@@ -1,0 +1,69 @@
+Index: src/components/Contact/Contact.jsx
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import React from 'react';\nimport './style.scss';\nimport { Button } from '@material-ui/core';\n\nfunction Contact() {\n  return (\n    <section className=\"contact\">\n      <div className=\"contact__container\">\n        <div className=\"contact__header\">\n          <h5>Practice Advice</h5>\n          <h1>JOIN US</h1>\n          <p>\n            Problems trying to resolve the conflict between\n            <br />\n            the two major realms of Classical physics: Newtonian mechanics\n          </p>\n        </div>\n        <div className=\"contact__form\">\n          <input type=\"email\" id=\"email\" className=\"address__field\" placeholder=\"Your Email\" />\n          <Button label=\"Subscribe\" className=\"subscribe__button\" variant=\"contained\">\n            Subscribe\n          </Button>\n        </div>\n      </div>\n    </section>\n  );\n}\n\nexport default Contact;\n
+===================================================================
+diff --git a/src/components/Contact/Contact.jsx b/src/components/Contact/Contact.jsx
+--- a/src/components/Contact/Contact.jsx	
++++ b/src/components/Contact/Contact.jsx	
+@@ -1,8 +1,12 @@
+-import React from 'react';
++import React, { useState } from 'react';
+ import './style.scss';
+ import { Button } from '@material-ui/core';
+ 
+-function Contact() {
++const Contact = () => {
++  const [email, setEmail] = useState('');
++  const handleSubmit = (e) => {
++    e.preventDefault();
++  };
+   return (
+     <section className="contact">
+       <div className="contact__container">
+@@ -15,15 +19,15 @@
+             the two major realms of Classical physics: Newtonian mechanics
+           </p>
+         </div>
+-        <div className="contact__form">
+-          <input type="email" id="email" className="address__field" placeholder="Your Email" />
++        <form onSubmit={handleSubmit} className="contact__form">
++          <input type="email" id="email" value={email} required onChange={(e) => setEmail(e.target.value)} className="address__field" placeholder="Your Email" />
+           <Button label="Subscribe" className="subscribe__button" variant="contained">
+             Subscribe
+           </Button>
+-        </div>
++        </form>
+       </div>
+     </section>
+   );
+-}
++};
+ 
+ export default Contact;
+Index: src/components/Contact/style.scss
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>@import '../../App.scss';\n\n.contact__container {\n  max-width: 70vw;\n  margin: 100px auto;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  .contact__header {\n    text-align: center;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    margin-bottom: 60px;\n    h5 {\n      color: $primaryColor;\n      font-size: 0.8rem;\n      font-weight: 700;\n    }\n    h1 {\n      font-size: 2.5rem;\n      font-weight: 700;\n      margin: 10px auto\n    }\n    p{\n      font-size: 0.8rem;\n      line-height: 1.25rem;\n      color: $secondTextColor;\n      font-weight: 400;\n    }\n    }\n  .contact__form {\n    display: flex;\n    flex-direction: row;\n    justify-content: center;\n    width: 100%;\n    height: 58px;\n    border-radius: 5px;\n    //border: 1px solid #E6E6E6;\n    .address__field {\n      background: #F9F9F9;\n      width: 50%;\n      border: 1px solid #E6E6E6;\n      box-sizing: border-box;\n      border-radius: 5px;\n      font-size: 1rem;\n      color: $secondTextColor;\n      padding: 20px;\n      &:focus{\n        border: 1px solid $primaryColor;\n        outline: none;\n      }\n    }\n    .subscribe__button{\n      background: $primaryColor;\n      color: white;\n      text-transform: capitalize;\n      border: 1px solid #E6E6E6;\n      box-sizing: border-box;\n      border-radius: 0px 5px 5px 0px;\n      box-shadow: none;\n    }\n  }\n}
+===================================================================
+diff --git a/src/components/Contact/style.scss b/src/components/Contact/style.scss
+--- a/src/components/Contact/style.scss	
++++ b/src/components/Contact/style.scss	
+@@ -22,7 +22,7 @@
+       font-weight: 700;
+       margin: 10px auto
+     }
+-    p{
++    p {
+       font-size: 0.8rem;
+       line-height: 1.25rem;
+       color: $secondTextColor;
+@@ -46,7 +46,7 @@
+       font-size: 1rem;
+       color: $secondTextColor;
+       padding: 20px;
+-      &:focus{
++      &:focus {
+         border: 1px solid $primaryColor;
+         outline: none;
+       }
