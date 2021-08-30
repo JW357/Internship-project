@@ -8,11 +8,13 @@ import expert2 from './images/expert2.jpg';
 function Experts() {
   const [starNumber] = useState(3);
   const [stars, setStars] = useState([]);
+
   useEffect(() => {
     for (let i = 0; i <= starNumber; i += 1) {
       setStars((prevState) => [...prevState, i]);
     }
   }, []);
+
   return (
     <section className="experts">
       <div className="experts__container">
