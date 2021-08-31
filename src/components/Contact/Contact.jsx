@@ -3,7 +3,7 @@ import './style.scss';
 import { Button } from '@material-ui/core';
 
 function Contact() {
-  const [address, setAddress] = useState();
+  const [address, setAddress] = useState(null);
 
   return (
     <section className="contact">
@@ -25,19 +25,15 @@ function Contact() {
             placeholder="Your Email"
             value={address}
             onChange={(e) => setAddress(e.target.value)}
+            autoComplete="off"
           />
           <Button label="Subscribe" className="subscribe__button" variant="contained">
             Subscribe
           </Button>
         </div>
-        <div className="greeting-text__box">
-          <p>
-            &nbsp;
-            Hi,
-            &nbsp;
-            {address}
-          </p>
-        </div>
+        <span className="greeting-text__line">
+          {address ? `\u00A0 Hi, ${address.replace(/@.*/, '')}` : null}
+        </span>
       </div>
     </section>
   );

@@ -61,14 +61,13 @@
       box-shadow: none;
     }
   }
-  .greeting-text__box {
+  .greeting-text__line {
     font-weight: 600;
     color: $secondTextColor;
-    border: 1px solid $primaryColor;
     background: $secondaryColor;
     width: 60%;
     margin: 10px auto;
     border-radius: 5px;
-    line-height: 1.5rem;
+    line-height: 3rem;
   }
 }
