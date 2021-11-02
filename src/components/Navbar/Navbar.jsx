@@ -3,6 +3,7 @@ import {
   Toolbar, Button, Typography, Tabs, Tab,
 } from '@material-ui/core';
 import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
+import ContactModal from './ContactModal/ContactModal'
 import { useStyles } from './style';
 
 export default function Navbar() {
@@ -29,6 +30,7 @@ export default function Navbar() {
       >
         JOIN US
       </Button>
+      <ContactModal/>
     </Toolbar>
   );
 }
