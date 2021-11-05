@@ -22,13 +22,13 @@
       font-weight: 700;
       margin: 10px auto
     }
-    p{
+    p {
       font-size: 0.8rem;
       line-height: 1.25rem;
       color: $secondTextColor;
       font-weight: 400;
     }
-    }
+  }
   .contact__form {
     display: flex;
     flex-direction: row;
@@ -36,7 +36,7 @@
     width: 60%;
     height: 58px;
     border-radius: 5px;
-    //border: 1px solid #E6E6E6;
+
     .address__field {
       background: #F9F9F9;
       width: 100%;
