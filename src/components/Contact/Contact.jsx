@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './style.scss';
 import { Button } from '@material-ui/core';
 
 function Contact() {
+  const [address, setAddress] = useState(null);
+
   return (
     <section className="contact">
       <div className="contact__container">
@@ -16,11 +18,22 @@ function Contact() {
           </p>
         </div>
         <div className="contact__form">
-          <input type="email" id="email" className="address__field" placeholder="Your Email" />
+          <input
+            type="email"
+            id="email"
+            className="address__field"
+            placeholder="Your Email"
+            value={address}
+            onChange={(e) => setAddress(e.target.value)}
+            autoComplete="off"
+          />
           <Button label="Subscribe" className="subscribe__button" variant="contained">
             Subscribe
           </Button>
         </div>
+        <span className="greeting-text__line">
+          {address ? `\u00A0 Hi, ${address.replace(/@.*/, '')}` : null}
+        </span>
       </div>
     </section>
   );

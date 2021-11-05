@@ -1,9 +1,20 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './style.scss';
 import StarIcon from '@material-ui/icons/Star';
 import StarOutlineIcon from '@material-ui/icons/StarOutline';
+import expert1 from './images/expert1.jpg';
+import expert2 from './images/expert2.jpg';
 
 function Experts() {
+  const [starNumber] = useState(3);
+  const [stars, setStars] = useState([]);
+
+  useEffect(() => {
+    for (let i = 0; i <= starNumber; i += 1) {
+      setStars((prevState) => [...prevState, i]);
+    }
+  }, []);
+
   return (
     <section className="experts">
       <div className="experts__container">
@@ -18,7 +29,7 @@ function Experts() {
         </div>
         <div className="experts-review__box">
           <div className="expert-review__block">
-            <div className="expert__picture expert__picture--first" />
+            <img src={expert1} className="expert__picture expert__picture--first" alt="expert1" />
             <p className="review__text">
               Slate helps you see how many more days
               <br />
@@ -26,18 +37,15 @@ function Experts() {
               <br />
               goal for the month and year.
             </p>
-            <div className="rating__line">
-              <StarIcon className="star__icon" />
-              <StarIcon className="star__icon" />
-              <StarIcon className="star__icon" />
-              <StarIcon className="star__icon" />
+            <div className="star__rating">
+              {stars.map((key) => <StarIcon className="star__icon" key={key} />)}
               <StarOutlineIcon className="star__icon" />
             </div>
             <p className="name__text">Regina Miles</p>
             <p className="role__text">Designer</p>
           </div>
           <div className="expert-review__block">
-            <div className="expert__picture expert__picture--second" />
+            <img src={expert2} className="expert__picture expert__picture--second" alt="expert2" />
             <p className="review__text">
               Slate helps you see how many more days
               <br />
@@ -45,11 +53,8 @@ function Experts() {
               <br />
               goal for the month and year.
             </p>
-            <div className="rating__line">
-              <StarIcon className="star__icon" />
-              <StarIcon className="star__icon" />
-              <StarIcon className="star__icon" />
-              <StarIcon className="star__icon" />
+            <div className="star__rating">
+              {stars.map((key) => <StarIcon className="star__icon" key={key} />)}
               <StarOutlineIcon className="star__icon" />
             </div>
             <p className="name__text">Regina Miles</p>

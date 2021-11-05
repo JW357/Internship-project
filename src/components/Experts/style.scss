@@ -29,17 +29,15 @@
           flex-direction: column;
           align-items: center;
           .expert__picture {
-              background-size: cover;
               width: 8rem;
               height: 8rem;
               border-radius: 50%;
-              &--first{
-                  background-image: url(./images/1.jpg);
-                  background-position: 80% 40%;
+              object-fit: cover;
+              &--first {
+                  object-position: 80% 40%;
               }
-              &--second{
-                  background-image: url(./images/2.jpg);
-                  background-position: 80% 60%;
+              &--second {
+                  object-position: 80% 80%;
               }
           }
           .review__text {
@@ -48,7 +46,7 @@
               color: $secondTextColor;
               line-height: 1.25rem
           }
-          .rating__line {
+          .star__rating {
             .star__icon {
               color: #F3CD03;
             }
@@ -57,12 +55,12 @@
               font-size: 1rem;
               font-weight: 700;
           }
-          .role__text{
+          .role__text {
               color: $secondTextColor;
               font-size: 0.8rem;
               font-weight: 700;
           }
       }
     }
-    
+
 }

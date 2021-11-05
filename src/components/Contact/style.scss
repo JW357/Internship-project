@@ -22,36 +22,36 @@
       font-weight: 700;
       margin: 10px auto
     }
-    p{
+    p {
       font-size: 0.8rem;
       line-height: 1.25rem;
       color: $secondTextColor;
       font-weight: 400;
     }
-    }
+  }
   .contact__form {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 100%;
+    width: 60%;
     height: 58px;
     border-radius: 5px;
-    //border: 1px solid #E6E6E6;
+
     .address__field {
       background: #F9F9F9;
-      width: 50%;
+      width: 100%;
       border: 1px solid #E6E6E6;
       box-sizing: border-box;
       border-radius: 5px;
       font-size: 1rem;
       color: $secondTextColor;
       padding: 20px;
-      &:focus{
+      &:focus {
         border: 1px solid $primaryColor;
         outline: none;
       }
     }
-    .subscribe__button{
+    .subscribe__button {
       background: $primaryColor;
       color: white;
       text-transform: capitalize;
@@ -60,5 +60,14 @@
       border-radius: 0px 5px 5px 0px;
       box-shadow: none;
     }
+  }
+  .greeting-text__line {
+    font-weight: 600;
+    color: $secondTextColor;
+    background: $secondaryColor;
+    width: 60%;
+    margin: 10px auto;
+    border-radius: 5px;
+    line-height: 3rem;
   }
 }
