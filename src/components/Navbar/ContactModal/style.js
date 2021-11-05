@@ -54,7 +54,20 @@ export const useStyles = makeStyles((theme) => ({
     justifyContent: 'center',
     flexDirection: 'column',
     '& > *': {
-      margin: '0.7rem auto',
+      margin: '0.8rem auto',
+    },
+  },
+
+  textInput: {
+    position: 'relative',
+    width: '30ch',
+    '& p': {
+      bottom: '3.7rem',
+      left: '-0.9rem',
+      width: '100%',
+      position: 'absolute',
+      textAlign: 'center',
+      whiteSpace: 'noWrap',
     },
   },
 
