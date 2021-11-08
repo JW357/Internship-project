@@ -56,7 +56,7 @@ export default function ContactModal({
               </Button>
             </div>
             <div className={classes.inputBox}>
-              <h1 className={classes.modalHeader}>Contact wits Us</h1>
+              <h1 className={classes.modalHeader}>Contact with Us</h1>
               <form onSubmit={handleSubmit} className={classes.inputs}>
                 <TextField
                   className={classes.textInput}
