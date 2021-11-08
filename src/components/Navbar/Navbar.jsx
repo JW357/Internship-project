@@ -13,10 +13,10 @@ export default function Navbar() {
         BrandName
       </Typography>
       <Tabs className={classes.tabs}>
-        <Tab className={classes.nav} label="Home" />
-        <Tab className={classes.nav} label="Product" />
-        <Tab className={classes.nav} label="Pricing" />
-        <Tab className={classes.nav} label="Contact" />
+        <Tab className={classes.nav} id="Home" label="Home" />
+        <Tab className={classes.nav} id="Product" label="Product" />
+        <Tab className={classes.nav} id="Pricing" label="Pricing" />
+        <Tab className={classes.nav} id="Contact" label="Contact" />
       </Tabs>
       <Button className={classes.login}>
         Login

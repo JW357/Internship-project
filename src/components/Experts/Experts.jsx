@@ -29,7 +29,7 @@ function Experts() {
         </div>
         <div className="experts-review__box">
           <div className="expert-review__block">
-            <img src={expert1} className="expert__picture expert__picture--first" alt="expert1" />
+            <img src={expert1} className="expert__picture expert__picture--first" alt="lady working on computer" />
             <p className="review__text">
               Slate helps you see how many more days
               <br />
@@ -45,7 +45,7 @@ function Experts() {
             <p className="role__text">Designer</p>
           </div>
           <div className="expert-review__block">
-            <img src={expert2} className="expert__picture expert__picture--second" alt="expert2" />
+            <img src={expert2} className="expert__picture expert__picture--second" alt="lady in white suit" />
             <p className="review__text">
               Slate helps you see how many more days
               <br />

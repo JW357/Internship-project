@@ -23,13 +23,13 @@
 
 .course-option__container {
     margin: 100px auto;
-    display: grid; 
+    display: grid;
     max-width: 70vw;
     justify-content: space-between;
-    grid-template-columns: 240px 240px 240px 240px; 
-    grid-template-rows: 658px 658px 658px; 
-    gap: 60px 128px; 
-    grid-template-areas: 
+    grid-template-columns: 240px 240px 240px 240px;
+    grid-template-rows: 658px 658px 658px;
+    gap: 60px 128px;
+    grid-template-areas:
       ". . . ."
       ". . . ."
       ". . . .";
@@ -58,7 +58,7 @@
             color: $secondTextColor;
             text-decoration: line-through;
           }
-          
+
           &--discount {
             color: #40BB15;
           }
@@ -75,13 +75,13 @@
               color: $primaryColor;
               font-size: 1rem;
               margin-right: 2px;
-      
+
             }
             &--chart {
               color: #E77C40;
               font-size: 1rem;
               margin-right: 2px;
-      
+
             }
             &--text {
               color: $secondTextColor;
@@ -204,9 +204,9 @@
           .course__buttons {
               display: flex;
               align-items: flex-end;
-              margin: 0 auto;  
+              margin: 0 auto;
               border-radius: 50%;
-              min-width: 0; 
+              min-width: 0;
               &--heart, &--cart, &--eye{
               background-color: white;
               padding: 10px;
