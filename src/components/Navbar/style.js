@@ -1,7 +1,7 @@
 /* eslint-disable import/prefer-default-export */
 import { makeStyles } from '@material-ui/core/styles';
 
-export const useStyles = makeStyles({
+export const useStyles = makeStyles((theme) => ({
   nav: {
     color: '#737373',
     fontWeight: '700',
@@ -12,7 +12,7 @@ export const useStyles = makeStyles({
   },
   button: {
     color: 'white',
-    background: '#23A6F0',
+    background: theme.palette.primary.main,
     fontWeight: '700',
     boxSizing: 'border-box',
     padding: '13px 30px',
@@ -24,7 +24,7 @@ export const useStyles = makeStyles({
     justifyContent: 'space-evenly',
   },
   login: {
-    color: '#23A6F0',
+    color: theme.palette.primary.main,
     fontWeight: '700',
     textTransform: 'capitalize',
     left: '30px',
@@ -32,4 +32,4 @@ export const useStyles = makeStyles({
   logo: {
     fontWeight: '700',
   },
-});
+}));

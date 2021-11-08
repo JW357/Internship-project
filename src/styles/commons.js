@@ -1,4 +1,4 @@
-import { createTheme, makeStyles } from '@material-ui/core/styles';
+import { createTheme } from '@material-ui/core/styles';
 
 export const theme = createTheme({
   typography: {
@@ -6,11 +6,13 @@ export const theme = createTheme({
       'Montserrat',
       'sans-serif',
     ],
+
+  },
+  palette: {
+    primary: {
+      main: '#23A6F0',
+    },
   },
 });
 
-export const useStyles = makeStyles({
-  root: {
-    width: '100vw',
-  },
-});
+export default createTheme;

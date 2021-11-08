@@ -1,10 +1,10 @@
 /* eslint-disable import/prefer-default-export */
 import { makeStyles } from '@material-ui/core/styles';
 
-export const useStyles = makeStyles({
+export const useStyles = makeStyles((theme) => ({
   buttonQuote: {
     color: 'white',
-    backgroundColor: '#23A6F0',
+    backgroundColor: theme.palette.primary.main,
     border: 'none',
     textTransform: 'capitalize',
     fontWeight: '600',
@@ -12,8 +12,8 @@ export const useStyles = makeStyles({
     fontSize: '0.8rem',
   },
   buttonLearn: {
-    color: '#23A6F0',
-    borderColor: '#23A6F0',
+    color: theme.palette.primary.main,
+    borderColor: theme.palette.primary.main,
     marginLeft: '20px',
     textTransform: 'capitalize',
     fontWeight: '600',
@@ -34,7 +34,7 @@ export const useStyles = makeStyles({
   },
   joinUs: {
     margin: '150px 0 40px 0',
-    color: '#23A6F0',
+    color: theme.palette.primary.main,
     fontWeight: '700',
   },
-});
+}));
