@@ -10,32 +10,25 @@ export default function ContactModal({
   open,
   setOpen,
 }) {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [nameError, setNameError] = useState(false);
-  const [emailError, setEmailError] = useState(false);
-  const [nameErrorMessage, setNameErrorMessage] = useState('');
-  const [emailErrorMessage, setEmailErrorMessage] = useState('');
+  const [userInput, setUserInput] = useState('');
+  const [inputErrorMessage, setInputErrorMessage] = useState({});
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setNameError(false);
-    setEmailError(false);
-    setNameErrorMessage('');
-    setEmailErrorMessage('');
+    setInputErrorMessage('');
 
-    if (name.length < 2) {
-      setNameError(true);
-      setNameErrorMessage('Name must contain more than 2 characters');
+    const error = {};
+
+    if (userInput.length < 2) {
+      error.name = 'Name must contain more than 2 characters';
     }
-
     const validation = /\S+@\S+\.\S+/;
 
-    if (validation.test(email) === false) {
+    if (validation.test(userInput) === false) {
       e.preventDefault();
-      setEmailError(true);
-      setEmailErrorMessage('Invalid e-mail address');
+      error.email = 'Invalid e-mail address';
     }
+    setInputErrorMessage(error);
   };
 
   const classes = useStyles();
@@ -60,18 +53,18 @@ export default function ContactModal({
               <form onSubmit={handleSubmit} className={classes.inputs}>
                 <TextField
                   className={classes.textInput}
-                  onChange={(e) => setName(e.target.value)}
-                  error={nameError}
-                  helperText={nameErrorMessage}
+                  onChange={(e) => setUserInput(e.target.value)}
+                  error={inputErrorMessage.name}
+                  helperText={inputErrorMessage.name}
                   label="Name"
                   variant="outlined"
                 />
                 <TextField className={classes.textInput} label="Surname" variant="outlined" />
                 <TextField
                   className={classes.textInput}
-                  onChange={(e) => setEmail(e.target.value)}
-                  error={emailError}
-                  helperText={emailErrorMessage}
+                  onChange={(e) => setUserInput(e.target.value)}
+                  error={inputErrorMessage.email}
+                  helperText={inputErrorMessage.email}
                   label="e-mail address"
                   variant="outlined"
                 />
