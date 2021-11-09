@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import {
   Button, Checkbox, FormControl, FormControlLabel, Modal, TextField,
 } from '@material-ui/core';
-// eslint-disable-next-line import/no-extraneous-dependencies
 import PropTypes from 'prop-types';
 import { useStyles } from './style';
 
