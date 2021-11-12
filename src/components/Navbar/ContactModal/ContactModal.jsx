@@ -40,7 +40,10 @@ export default function ContactModal({
         errorEmail: 'Invalid e-mail address',
       })));
     } else {
-      setUserInput({ ...userInput, errorEmail: '' });
+      setUserInput({
+        ...userInput,
+        errorEmail: '',
+      });
     }
   };
 

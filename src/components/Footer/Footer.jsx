@@ -8,7 +8,7 @@ function Footer() {
   return (
     <section className="footer__section">
       <div className="footer-column__container">
-        <div className="footer__column">
+        <div className="footer-column">
           <h2>Get In Touch</h2>
           <p>
             the quick fox jumps over the
@@ -21,21 +21,21 @@ function Footer() {
             <TwitterIcon className="twitter__icon" />
           </div>
         </div>
-        <div className="footer__column">
+        <div className="footer-column">
           <h2>Company Info</h2>
           <a href="#Home">About Us</a>
           <a href="#Home">Carrier</a>
           <a href="#Home">We are hiring</a>
           <a href="#Home">Blog</a>
         </div>
-        <div className="footer__column">
+        <div className="footer-column">
           <h2>Features</h2>
           <a href="#Home">Business Marketing</a>
           <a href="#Home">User Analytic</a>
           <a href="#Home">Live Chat</a>
           <a href="#Home">Unlimited Support</a>
         </div>
-        <div className="footer__column">
+        <div className="footer-column">
           <h2>Resources</h2>
           <a href="#Home">IOS & Android</a>
           <a href="#Home">Watch a Demo</a>
