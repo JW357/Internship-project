@@ -22,18 +22,23 @@ export default function ContactModal({
     e.preventDefault();
 
     if (userInput.name.length < 2) {
-      setUserInput({ ...userInput, errorName: 'Invalid e-mail address' });
-      // eslint-disable-next-line no-debugger
-      debugger;
+      setUserInput(((prevState) => ({
+        ...prevState,
+        errorName: 'Name must contain at least 2 characters',
+      })));
     } else {
-      // eslint-disable-next-line no-debugger
-      debugger;
-      setUserInput({ ...userInput, errorName: '' });
+      setUserInput(((prevState) => ({
+        ...prevState,
+        errorName: '',
+      })));
     }
     const validation = /\S+@\S+\.\S+/;
 
     if (validation.test(userInput.email) === false) {
-      setUserInput({ ...userInput, errorEmail: 'Invalid e-mail address' });
+      setUserInput(((prevState) => ({
+        ...prevState,
+        errorEmail: 'Invalid e-mail address',
+      })));
     } else {
       setUserInput({ ...userInput, errorEmail: '' });
     }
