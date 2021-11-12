@@ -9,25 +9,34 @@ export default function ContactModal({
   open,
   setOpen,
 }) {
-  const [userInput, setUserInput] = useState('');
-  const [inputErrorMessage, setInputErrorMessage] = useState({});
+  const [userInput, setUserInput] = useState({
+    name: '',
+    surname: '',
+    email: '',
+    message: '',
+    errorName: '',
+    errorEmail: '',
+  });
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setInputErrorMessage('');
 
-    const error = {};
-
-    if (userInput.length < 2) {
-      error.name = 'Name must contain more than 2 characters';
+    if (userInput.name.length < 2) {
+      setUserInput({ ...userInput, errorName: 'Invalid e-mail address' });
+      // eslint-disable-next-line no-debugger
+      debugger;
+    } else {
+      // eslint-disable-next-line no-debugger
+      debugger;
+      setUserInput({ ...userInput, errorName: '' });
     }
     const validation = /\S+@\S+\.\S+/;
 
-    if (validation.test(userInput) === false) {
-      e.preventDefault();
-      error.email = 'Invalid e-mail address';
+    if (validation.test(userInput.email) === false) {
+      setUserInput({ ...userInput, errorEmail: 'Invalid e-mail address' });
+    } else {
+      setUserInput({ ...userInput, errorEmail: '' });
     }
-    setInputErrorMessage(error);
   };
 
   const classes = useStyles();
@@ -49,25 +58,39 @@ export default function ContactModal({
             </div>
             <div className={classes.inputBox}>
               <h1 className={classes.modalHeader}>Contact with Us</h1>
-              <form onSubmit={handleSubmit} className={classes.inputs}>
+              <form onSubmit={(e) => handleSubmit(e)} className={classes.inputs}>
                 <TextField
                   className={classes.textInput}
-                  onChange={(e) => setUserInput(e.target.value)}
-                  error={inputErrorMessage.name}
-                  helperText={inputErrorMessage.name}
+                  onChange={(e) => setUserInput({ ...userInput, name: e.target.value })}
+                  value={userInput.name}
+                  error={userInput.errorName}
+                  helperText={userInput.errorName}
                   label="Name"
                   variant="outlined"
                 />
-                <TextField className={classes.textInput} label="Surname" variant="outlined" />
+                <TextField
+                  onChange={(e) => setUserInput({ ...userInput, surname: e.target.value })}
+                  className={classes.textInput}
+                  label="Surname"
+                  variant="outlined"
+                />
                 <TextField
                   className={classes.textInput}
-                  onChange={(e) => setUserInput(e.target.value)}
-                  error={inputErrorMessage.email}
-                  helperText={inputErrorMessage.email}
+                  onChange={(e) => setUserInput({ ...userInput, email: e.target.value })}
+                  value={userInput.email}
+                  error={userInput.errorEmail}
+                  helperText={userInput.errorEmail}
                   label="e-mail address"
                   variant="outlined"
                 />
-                <TextField className={classes.messageInput} multiline rows={6} label="Message" variant="outlined" />
+                <TextField
+                  className={classes.messageInput}
+                  onChange={(e) => setUserInput({ ...userInput, message: e.target.value })}
+                  multiline
+                  rows={6}
+                  label="Message"
+                  variant="outlined"
+                />
                 <FormControl className={classes.formControl}>
                   <FormControlLabel
                     value="end"
