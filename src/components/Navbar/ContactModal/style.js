@@ -11,7 +11,7 @@ export const useStyles = makeStyles((theme) => ({
   window: {
     padding: '1rem',
     width: '30vw',
-    height: '75vh',
+    height: '80vh',
     background: 'white',
     border: `3px solid ${theme.palette.primary.main}`,
   },
@@ -22,6 +22,7 @@ export const useStyles = makeStyles((theme) => ({
   },
 
   inputBox: {
+    width: '100%',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
@@ -31,7 +32,7 @@ export const useStyles = makeStyles((theme) => ({
 
   modalHeader: {
     fontSize: '1.8rem',
-    margin: '1rem auto 2.5rem auto',
+    margin: '1rem auto 5rem auto',
   },
 
   messageInput: {
@@ -49,7 +50,7 @@ export const useStyles = makeStyles((theme) => ({
     marginRight: 'none',
   },
 
-  inputs: {
+  inputForm: {
     display: 'flex',
     justifyContent: 'center',
     flexDirection: 'column',
@@ -79,6 +80,18 @@ export const useStyles = makeStyles((theme) => ({
       fontSize: '1rem',
       fontWeight: '700',
     },
+  },
+
+  formAlert: {
+    position: 'absolute',
+    width: '40ch',
+    top: '14rem',
+  },
+
+  formLabel: {
+    textAlign: 'center',
+    margin: 0,
+    color: 'red',
   },
 }));
 
