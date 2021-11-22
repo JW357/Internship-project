@@ -50,7 +50,7 @@ export const useStyles = makeStyles((theme) => ({
     marginRight: 'none',
   },
 
-  inputs: {
+  inputForm: {
     display: 'flex',
     justifyContent: 'center',
     flexDirection: 'column',

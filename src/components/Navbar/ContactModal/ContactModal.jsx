@@ -43,7 +43,7 @@ export default function ContactModal({
     }
     const validation = /\S+@\S+\.\S+/;
 
-    if (validation.test(userInput.email) === false) {
+    if (!validation.test(userInput.email)) {
       setUserInput(((prevState) => ({
         ...prevState,
         errorEmail: 'Invalid e-mail address',
@@ -56,8 +56,8 @@ export default function ContactModal({
     }
 
     if (userInput.name.length >= 2
-      && validation.test(userInput.email) === true
-      && checked === true) {
+      && validation.test(userInput.email)
+      && checked) {
       dispatch(
         submit({
           name: userInput.name,
@@ -97,7 +97,7 @@ export default function ContactModal({
                 {userInput.name }
                 , your message have been sent
               </Alert>
-              <form onSubmit={(e) => handleSubmit(e)} className={classes.inputs}>
+              <form onSubmit={(e) => handleSubmit(e)} className={classes.inputForm}>
                 <TextField
                   className={classes.textInput}
                   onChange={(e) => setUserInput({ ...userInput, name: e.target.value })}
